@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 33.3333333333%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #d8e2dc;
+}
+
+/* This is the my skill section */
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .flexContainer {
+        flex-direction: row;
+    }
+}
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    /* margin px may change later */
+    margin: 10px;
+    /* padding px may change later */
+    padding: 10px;
+    border: 1px solid white;
+    height: 20%;
+    background-color: white;
+    /* text-align: center; */
+    text-align: justify;
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+/* This is the my work section */
+.myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workGrid {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    gap: 10px;
+    /* grid-template-areas: 
+      ". ."
+      ". ."
+      ". .";  */
+    /* grid-template-areas:
+      "gleft gright"
+      "gleft gleft"; */
+    height: 50%;
+
+    /* Put media for phone ipad and computer view port */
+}
+@media only screen and (max-width: 600 px) {
+    .workGrid {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width: 601 px) {
+    .workGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid white; */
+    text-align: justify;
+}
+/* .gridItem h4 {
+      text-align: center; */
+
+/* .gridItem-left {
+      grid-area: gleft;
+  } */
+.gridItem-right {
+    background-color: white;
+}
+.button {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+    width: 100%;
+}
+
+/* .button button{ */
