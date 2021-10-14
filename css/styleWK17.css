@@ -40,6 +40,25 @@
     width: 33.3333333333%;
 }
 
+@media only screen and (max-width: 600 px) {
+    .main-section {
+        height: 800px;
+        width: 100%;
+    }
+}
+
+.main-section-side {
+    height: 800px;
+    width: 33.3333333333%;
+}
+
+@media only screen and (max-width: 600 px) {
+    .main-section-side {
+        height: 800px;
+        width: 0%;
+    }
+}
+
 .bggreen {
     background-color: #d8e2dc;
 }
@@ -72,6 +91,7 @@
     top: 20%;
     left: 20%;
     /* z-index: 2; */
+
     height: 260px;
     width: 260px;
     border: 1px solid black;
@@ -128,7 +148,7 @@
     position: absolute;
     flex-wrap: wrap;
     top: 70%;
-    /* left: 65%; */
+    left: 65%;
     padding-left: 30px;
     width: 300px;
 }
